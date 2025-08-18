@@ -23,7 +23,7 @@
     ];
   in {
     overlays = import ./overlays {inherit inputs;};
-    nixosModules = import ./modules/nixos;
+    nixosModules = import ./modules;
 
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'

@@ -29,11 +29,18 @@
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
       # FIXME - DONE replace with your hostname
-      mainHost = nixpkgs.lib.nixosSystem {
+      vm-test-host = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           # > Our main nixos configuration file <
-          ./host/configuration.nix
+          ./hosts/vm-test-host/configuration.nix
+        ];
+      };
+      vm-test-host-efi = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          # > Our main nixos configuration file <
+          ./hosts/vm-test-host-efi/configuration.nix
         ];
       };
     };

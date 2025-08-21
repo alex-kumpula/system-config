@@ -98,7 +98,7 @@
     # Enable EFI bootloader integration
     efi = {
       canTouchEfiVariables = true; # Allows NixOS to update EFI boot variables
-      efiSysMountPoint = "/boot";  # Path where your EFI System Partition (ESP) is mounted
+      efiSysMountPoint = "/boot/EFI";  # Path where your EFI System Partition (ESP) is mounted
     };
   };
 

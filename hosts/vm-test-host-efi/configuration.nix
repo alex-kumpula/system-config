@@ -19,6 +19,7 @@
     outputs.nixosModules.xwayland-satellite
     outputs.nixosModules.alacritty
     outputs.nixosModules.git
+    outputs.nixosModules.nix-ld
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

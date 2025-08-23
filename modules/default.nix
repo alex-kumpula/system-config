@@ -10,4 +10,5 @@
   git = import ./git.nix;
   gdm = import ./gdm.nix;
   xwayland-satellite = import ./xwayland-satellite.nix;
+  nix-ld = import ./nix-ld.nix;
 }

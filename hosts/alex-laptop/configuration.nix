@@ -151,7 +151,6 @@
   };
 
   # VULKAN
-  hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true; # Needed for Steam to work, among other things
   hardware.opengl.enable = true;
   hardware.opengl.extraPackages = with pkgs; [

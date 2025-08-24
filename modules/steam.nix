@@ -15,7 +15,7 @@
   #   package = pkgs-unstable.gamescope;
   # };
 
-  environment.systemPackages = with unstable-pkgs; [
+  environment.systemPackages = with pkgs-unstable; [
     # ... other packages
     xkeyboard-config
   ];

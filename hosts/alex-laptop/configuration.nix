@@ -151,11 +151,11 @@
   };
 
   # VULKAN
-  hardware.opengl.driSupport32Bit = true; # Needed for Steam to work, among other things
-  hardware.opengl.enable = true;
-  hardware.opengl.extraPackages = with pkgs; [
-    vulkan-loader
-  ];
+  #hardware.opengl.driSupport32Bit = true; # Needed for Steam to work, among other things
+  # hardware.opengl.enable = true;
+  # hardware.opengl.extraPackages = with pkgs; [
+  #   vulkan-loader
+  # ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -225,7 +225,7 @@
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      extraGroups = ["networkmanager" "wheel" "audio" "input"];
+      extraGroups = ["networkmanager" "wheel" "audio" "input" "video"];
     };
   };
 

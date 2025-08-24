@@ -107,6 +107,7 @@
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
+    driSupport32Bit = true; # Required for Steam to work, among other things
   };
 
   # Load nvidia driver for Xorg and Wayland
@@ -150,11 +151,6 @@
     };
   };
 
-  # VULKAN
-  hardware.opengl.driSupport32Bit = true;
-  hardware.opengl.enable = true;
-  hardware.pulseaudio.support32Bit = true;
-
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -185,6 +181,7 @@
   # Enable sound with pipewire.
   # services.pulseaudio.enable = false;
   services.pulseaudio.enable = false;
+  services.pulseaudio.support32Bit = true;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;

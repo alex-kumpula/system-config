@@ -17,7 +17,7 @@
 
   environment.systemPackages = with pkgs; [
     # ... other packages
-    xkeyboard-config
+    xkeyboard_config
   ];
 
   programs.gamescope = {

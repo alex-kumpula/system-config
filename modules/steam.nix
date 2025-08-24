@@ -1,4 +1,4 @@
-{ pkgs-unstable, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
   programs.steam = {
     enable = true;
@@ -15,21 +15,21 @@
   #   package = pkgs-unstable.gamescope;
   # };
 
-  environment.systemPackages = with pkgs-unstable; [
+  environment.systemPackages = with pkgs; [
     # ... other packages
     xkeyboard-config
   ];
 
   programs.gamescope = {
     enable = true;
-    package = pkgs-unstable.gamescope;
+    package = pkgs.gamescope;
     capSysNice = false;
   };
 
   services.ananicy = {
     enable = true;
-    package = pkgs-unstable.ananicy-cpp;
-    rulesProvider = pkgs-unstable.ananicy-cpp;
+    package = pkgs.ananicy-cpp;
+    rulesProvider = pkgs.ananicy-cpp;
     extraRules = [
       {
         "name" = "gamescope";

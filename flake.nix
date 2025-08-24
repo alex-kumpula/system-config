@@ -21,9 +21,6 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
-  in {
-    overlays = import ./overlays {inherit inputs;};
-    nixosModules = import ./modules;
 
     mySpecialArgs = {
       inherit inputs outputs;
@@ -59,6 +56,9 @@
       #  config.allowUnfree = true;
       #};
     };
+  in {
+    overlays = import ./overlays {inherit inputs;};
+    nixosModules = import ./modules;
 
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'

@@ -7,7 +7,7 @@
     gamescopeSession.enable = true;
   };
 
-  
+
   programs.gamemode.enable = true;
   
   
@@ -24,8 +24,8 @@
 
   services.ananicy = {
     enable = true;
-    package = pkgs.ananicy-cpp;
-    rulesProvider = pkgs.ananicy-cpp;
+    package = pkgs-unstable.ananicy-cpp;
+    rulesProvider = pkgs-unstable.ananicy-cpp;
     extraRules = [
       {
         "name" = "gamescope";

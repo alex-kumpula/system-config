@@ -6,9 +6,31 @@
     dedicatedServer.openFirewall = true;
     gamescopeSession.enable = true;
   };
+
+  
   programs.gamemode.enable = true;
+  
+  
+  # programs.gamescope = {
+  #   enable = true;
+  #   package = pkgs-unstable.gamescope;
+  # };
+
   programs.gamescope = {
     enable = true;
     package = pkgs-unstable.gamescope;
+    capSysNice = false;
+  };
+
+  services.ananicy = {
+    enable = true;
+    package = pkgs.ananicy-cpp;
+    rulesProvider = pkgs.ananicy-cpp;
+    extraRules = [
+      {
+        "name" = "gamescope";
+        "nice" = -20;
+      }
+    ];
   };
 }

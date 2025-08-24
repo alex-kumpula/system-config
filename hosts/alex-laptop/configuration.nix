@@ -20,6 +20,7 @@
     outputs.nixosModules.alacritty
     outputs.nixosModules.git
     outputs.nixosModules.nix-ld
+    outputs.nixosModules.steam
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

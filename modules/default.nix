@@ -11,4 +11,5 @@
   gdm = import ./gdm.nix;
   xwayland-satellite = import ./xwayland-satellite.nix;
   nix-ld = import ./nix-ld.nix;
+  steam = import ./steam.nix;
 }

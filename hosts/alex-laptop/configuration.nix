@@ -107,7 +107,7 @@
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
-    driSupport32Bit = true; # Required for Steam to work, among other things
+    enable32bit = true; # Required for Steam to work, among other things
   };
 
   # Load nvidia driver for Xorg and Wayland

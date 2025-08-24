@@ -104,6 +104,9 @@
     };
   };
 
+  # Optimized linux kernel
+  boot.kernelPackages = pkgs.linuxPackages_zen;
+
   # NVIDIA
   # Enable OpenGL
   hardware.graphics = {

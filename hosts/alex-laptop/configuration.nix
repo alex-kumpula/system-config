@@ -153,7 +153,11 @@
   # VULKAN
   hardware.opengl.driSupport32Bit = true; # Needed for Steam to work, among other things
   hardware.opengl.enable = true;
-  hardware.opengl.extraPackages = with pkgs; [ vulkan-loader lib32.vulkan-loader ];
+  hardware.opengl.extraPackages = with pkgs; [
+    vulkan-loader
+    (lib32Packages.mesa)
+    (lib32Packages.vulkan-loader)
+  ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

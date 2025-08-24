@@ -112,6 +112,7 @@
       vulkan-validation-layers
       vulkan-extension-layer
     ];
+    enable32bit = true;
   };
 
   # Load nvidia driver for Xorg and Wayland

@@ -25,6 +25,41 @@
     overlays = import ./overlays {inherit inputs;};
     nixosModules = import ./modules;
 
+    mySpecialArgs = {
+      inherit inputs outputs;
+      # To use packages from nixpkgs-unstable,
+      # we configure some parameters for it first
+      #pkgs-stable = import nixpkgs-stable {
+      # Refer to the `system` parameter from
+      # the outer scope recursively
+      #  inherit inputs;
+      #  system = "x86_64-linux";
+      #  config.allowUnfree = true;
+      #};
+
+      #pkgs-last-stable = import nixpkgs-last-stable {
+      # Refer to the `system` parameter from
+      # the outer scope recursively
+      #  inherit inputs;
+      #  system = "x86_64-linux";
+      #  config.allowUnfree = true;
+      #};
+
+      pkgs-unstable = import nixpkgs-unstable {
+        # Refer to the `system` parameter from
+        # the outer scope recursively
+        inherit inputs;
+        system = "x86_64-linux";
+        config.allowUnfree = true;
+      };
+
+      #pkgs-pinned = import nixpkgs-pinned {
+      #  inherit inputs;
+      #  system = "x86_64-linux";
+      #  config.allowUnfree = true;
+      #};
+    };
+
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
@@ -44,7 +79,7 @@
         ];
       };
       alex-laptop = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = mySpecialArgs;
         modules = [
           # > Our main nixos configuration file <
           ./hosts/alex-laptop/configuration.nix

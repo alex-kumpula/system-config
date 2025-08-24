@@ -10,11 +10,15 @@
 
   programs.gamemode.enable = true;
   
-  
   # programs.gamescope = {
   #   enable = true;
   #   package = pkgs-unstable.gamescope;
   # };
+
+  environment.systemPackages = with unstable-pkgs; [
+    # ... other packages
+    xkeyboard-config
+  ];
 
   programs.gamescope = {
     enable = true;

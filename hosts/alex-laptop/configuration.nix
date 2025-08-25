@@ -175,6 +175,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  programs.nm-applet.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Edmonton";

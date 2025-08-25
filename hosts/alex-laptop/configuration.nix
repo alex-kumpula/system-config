@@ -177,6 +177,30 @@
   networking.networkmanager.enable = true;
   programs.nm-applet.enable = true;
 
+  networking.firewall.allowedTCPPorts = [
+    # Slipstresm
+    7760
+    7770
+    7771
+    7779
+    7781
+
+    # Minecraft
+    25565 
+  ];
+
+  networking.firewall.allowedUDPPorts = [
+    # Slipstresm
+    7760
+    7770
+    7771
+    7779
+    7781
+
+    # Minecraft
+    25565 
+  ];
+
   # Set your time zone.
   time.timeZone = "America/Edmonton";
 

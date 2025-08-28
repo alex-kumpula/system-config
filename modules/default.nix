@@ -13,4 +13,5 @@
   nix-ld = import ./nix-ld.nix;
   steam = import ./steam.nix;
   blueberry = import ./blueberry.nix;
+  wl-mirror = import ./wl-mirror.nix;
 }

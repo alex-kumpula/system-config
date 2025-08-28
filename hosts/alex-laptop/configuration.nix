@@ -21,6 +21,7 @@
     outputs.nixosModules.git
     outputs.nixosModules.nix-ld
     outputs.nixosModules.steam
+    outputs.nixosModules.blueberry
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

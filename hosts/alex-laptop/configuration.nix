@@ -23,6 +23,7 @@
     outputs.nixosModules.steam
     outputs.nixosModules.blueberry
     outputs.nixosModules.wl-mirror
+    outputs.nixosModules.evremap
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

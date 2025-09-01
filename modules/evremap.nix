@@ -1,4 +1,6 @@
 { ... }:
 {
-  services.evremap.enable = true;
+  environment.systemPackages = with pkgs; [
+    evremap
+  ];
 }

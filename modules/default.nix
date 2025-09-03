@@ -15,4 +15,5 @@
   blueberry = import ./blueberry.nix;
   wl-mirror = import ./wl-mirror.nix;
   evremap = import ./evremap.nix;
+  qbittorrent = import ./qbittorrent.nix;
 }

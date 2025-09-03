@@ -24,6 +24,7 @@
     outputs.nixosModules.blueberry
     outputs.nixosModules.wl-mirror
     outputs.nixosModules.evremap
+    outputs.nixosModules.qbittorrent
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

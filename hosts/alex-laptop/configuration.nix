@@ -191,6 +191,9 @@
 
     # Minecraft
     25565 
+
+    # Food poisoning
+    7777
   ];
 
   networking.firewall.allowedUDPPorts = [
@@ -203,6 +206,9 @@
 
     # Minecraft
     25565 
+
+    # Food poisoning
+    7777
   ];
 
   # Set your time zone.

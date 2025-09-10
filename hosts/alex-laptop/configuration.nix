@@ -111,6 +111,9 @@
   # Optimized linux kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
+  # Enable NTFS support
+  boot.supportedFilesystems = [ "ntfs" ];
+
   # NVIDIA
   # Enable OpenGL
   hardware.graphics = {

@@ -25,6 +25,7 @@
     outputs.nixosModules.wl-mirror
     outputs.nixosModules.evremap
     outputs.nixosModules.qbittorrent
+    outputs.nixosModules.virtualbox
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

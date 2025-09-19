@@ -126,6 +126,7 @@
       vulkan-loader
       vulkan-validation-layers
       vulkan-extension-layer
+      cudaPackages.cudatoolkit
     ];
     enable32Bit = true;
   };

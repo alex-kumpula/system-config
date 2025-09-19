@@ -17,4 +17,5 @@
   evremap = import ./evremap.nix;
   qbittorrent = import ./qbittorrent.nix;
   virtualbox = import ./virtualbox.nix;
+  cuda = import ./cuda.nix;
 }

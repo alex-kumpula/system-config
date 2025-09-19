@@ -26,6 +26,7 @@
     outputs.nixosModules.evremap
     outputs.nixosModules.qbittorrent
     outputs.nixosModules.virtualbox
+    outputs.nixosModules.cuda
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd
@@ -60,6 +61,8 @@
     config = {
       # Disable if you don't want unfree packages
       allowUnfree = true;
+      # Enable CUDA support
+      cudaSupport = true;
     };
   };
 

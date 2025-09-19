@@ -198,6 +198,9 @@
 
     # Food poisoning
     7777
+
+    # Jupyter Notebook
+    8888
   ];
 
   networking.firewall.allowedUDPPorts = [
@@ -213,6 +216,9 @@
 
     # Food poisoning
     7777
+
+    # Jupyter Notebook
+    8888
   ];
 
   # Set your time zone.

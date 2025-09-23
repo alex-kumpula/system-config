@@ -18,4 +18,5 @@
   qbittorrent = import ./qbittorrent.nix;
   virtualbox = import ./virtualbox.nix;
   cuda = import ./cuda.nix;
+  ssh-agent = import ./ssh-agent.nix;
 }

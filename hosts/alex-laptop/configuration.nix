@@ -27,6 +27,7 @@
     outputs.nixosModules.qbittorrent
     outputs.nixosModules.virtualbox
     outputs.nixosModules.cuda
+    outputs.nixosModules.ssh-agent
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

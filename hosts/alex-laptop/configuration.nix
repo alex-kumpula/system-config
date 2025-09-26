@@ -28,6 +28,7 @@
     outputs.nixosModules.virtualbox
     outputs.nixosModules.cuda
     outputs.nixosModules.ssh-agent
+    outputs.nixosModules.virt-manager
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

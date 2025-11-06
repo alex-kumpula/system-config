@@ -266,6 +266,11 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
 
+  # Enable appimage support
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+
+
 ######################################################
 
 

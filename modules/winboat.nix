@@ -4,4 +4,8 @@
     winboat
     freerdp
   ];
+
+  virtualisation.docker = {
+    enable = true;
+  };
 }

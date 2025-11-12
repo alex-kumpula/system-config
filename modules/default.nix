@@ -21,4 +21,5 @@
   ssh-agent = import ./ssh-agent.nix;
   virt-manager = import ./virt-manager.nix;
   flatpak = import ./flatpak.nix;
+  winboat = import ./winboat.nix;
 }

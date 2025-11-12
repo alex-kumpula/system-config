@@ -30,6 +30,7 @@
     outputs.nixosModules.ssh-agent
     outputs.nixosModules.virt-manager
     outputs.nixosModules.flatpak
+    outputs.nixosModules.winboat
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

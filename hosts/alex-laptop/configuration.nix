@@ -25,7 +25,7 @@
     outputs.nixosModules.wl-mirror
     outputs.nixosModules.evremap
     outputs.nixosModules.qbittorrent
-    outputs.nixosModules.virtualbox
+    # outputs.nixosModules.virtualbox
     outputs.nixosModules.cuda
     outputs.nixosModules.ssh-agent
     outputs.nixosModules.virt-manager

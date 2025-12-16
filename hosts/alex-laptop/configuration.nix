@@ -281,6 +281,7 @@
   networking.hostName = "alex-nixos";
 
   environment.shells = with pkgs; [ zsh ];
+  programs.zsh.enable = true;
 
   # TODO - DONE: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {

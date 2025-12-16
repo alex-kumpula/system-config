@@ -87,6 +87,17 @@
     # Opinionated: make flake registry and nix path match flake inputs
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
+
+    # Enable garbage collection
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 15d";
+    };
+
+    # Automatic store optimization
+    optimise.automatic = true;
+    optimise.dates = ["03:45"];
   };
 
 
@@ -282,17 +293,6 @@
 
   environment.shells = with pkgs; [ zsh ];
   programs.zsh.enable = true;
-
-  # Enable garbage collection
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 15d";
-  };
-
-  # Automatic store optimization
-  nix.optimise.automatic = true;
-  nix.optimise.dates = ["03:45"];
 
   # TODO - DONE: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {

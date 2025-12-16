@@ -283,6 +283,17 @@
   environment.shells = with pkgs; [ zsh ];
   programs.zsh.enable = true;
 
+  # Enable garbage collection
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 15d";
+  };
+
+  # Automatic store optimization
+  nix.optimise.automatic = true;
+  nix.optimise.dates = ["03:45"];
+
   # TODO - DONE: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     # FIXME - DONE: Replace with your username

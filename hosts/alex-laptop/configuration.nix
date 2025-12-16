@@ -280,6 +280,8 @@
   # TODO - DONE: Set your hostname
   networking.hostName = "alex-nixos";
 
+  environment.shells = with pkgs; [ zsh ];
+
   # TODO - DONE: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     # FIXME - DONE: Replace with your username
@@ -292,6 +294,10 @@
       openssh.authorizedKeys.keys = [
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];
+
+      shell = pkgs.zsh;
+      useDefaultShell = false;
+      
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       extraGroups = ["networkmanager" "wheel" "audio" "input" "video" "libvirtd" "docker"];
     };

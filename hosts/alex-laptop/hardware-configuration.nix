@@ -25,7 +25,7 @@
     };
 
   fileSystems."/mnt/games_sd" = {
-    device = "/dev/disk/by_label/games_sd";
+    device = "/dev/disk/by-label/games_sd";
     fsType = "btrfs";
     options = [
       "compress=zstd:3"

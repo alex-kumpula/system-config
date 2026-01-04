@@ -24,6 +24,19 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/mnt/games_sd" = {
+    device = "/dev/disk/by_label/games_sd";
+    fsType = "btrfs";
+    options = [
+      "compress=zstd:3"
+      "noatime"
+      "space_cache=v2"
+      "nofail"
+      "x-systemd.device-timeout=5"
+    ];
+  };
+    
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/49335600-7ecd-4ad9-bc0e-3277f5effed0"; }
     ];

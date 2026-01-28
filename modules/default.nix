@@ -19,6 +19,7 @@
   virtualbox = import ./virtualbox.nix;
   cuda = import ./cuda.nix;
   ssh-agent = import ./ssh-agent.nix;
+  sshfs = import ./sshfs.nix;
   virt-manager = import ./virt-manager.nix;
   flatpak = import ./flatpak.nix;
   winboat = import ./winboat.nix;

@@ -54,6 +54,9 @@
       xorg.libxkbfile
       xorg.libxshmfence
       zlib
+      udev
+      wayland
+      alsa-lib
     ]
     ++ pkgs.steam-run.args.multiPkgs pkgs; #add all the libraries included in the steam fhs environment
   };

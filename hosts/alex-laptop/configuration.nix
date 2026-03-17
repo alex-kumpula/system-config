@@ -31,6 +31,7 @@
     outputs.nixosModules.virt-manager
     outputs.nixosModules.flatpak
     outputs.nixosModules.winboat
+    outputs.nixosModules.xfce
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

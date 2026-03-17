@@ -23,4 +23,5 @@
   virt-manager = import ./virt-manager.nix;
   flatpak = import ./flatpak.nix;
   winboat = import ./winboat.nix;
+  xfce = import ./xfce.nix;
 }

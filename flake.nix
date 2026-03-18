@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    niri-git = {
+      url = "github:niri-wm/niri?ref=wip/branch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

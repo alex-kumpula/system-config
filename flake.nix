@@ -88,7 +88,6 @@
         modules = [
           # > Our main nixos configuration file <
           ./hosts/alex-laptop/configuration.nix
-          inputs.niri-git.nixosModules.niri
         ];
       };
     };
